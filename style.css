@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #727272;
+}
+.xdiv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(12, 141, 81, 0.3),rgba(0, 255, 200, 0.3)),url(bg9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    clip-path:polygon(100% 0%,100% 73%,75% 95%,50% 100%,25% 95%,0% 73%,0% 0%);
+}
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right,#1e997a 0%, #3ccdc1 0%, #16f6e3 100%);
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+    background: linear-gradient(to right,#1e6299 0%, #25b3d6 0%, #01ffc8 100%);
+}
+.navbar-brand{
+    font-size: 30px!important;
+    letter-spacing: 6px;
+}
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.header-buttons button{
+    background-color: transparent;
+    border: 2px solid#fff;
+    border-radius: 50px;
+    padding: 12px 35px;
+    margin: 5px 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.header-buttons button a{
+    text-decoration: none;
+    color: white;
+}
+.header-buttons button:hover{
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.header-buttons button:hover a{
+    color: #50d1c0;
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+.header-xdiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.xdiv{
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.xdiv:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+.xdiv:hover i{
+    color: #00fdb1;
+    background-color: rgba(85, 252, 229, 0.322);
+}
+.xdiv i{
+    color: #47b997;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 157, 0.295);
+}
+.nav-link{
+    padding: 8px 12px;
+    margin: 0px 7px;
+}
+.nav-link:hover,.dropdown-item:hover{
+    background-color: rgba(0, 255, 191, 0.438)!important;
+}
+
+/* Card  */
+.card:hover{
+    transition: 0.5s;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px 0 rgb(204, 204, 204);
+}
+.card i{
+    font-size: 22px;
+    margin: 0 10px;
+}
+.card-body{
+    border-bottom: 1px solid #00eaff;
+}
+/* blog */
+
+#more{
+    display: none;
+}
+/*footer*/
+.footer{
+    border-top: 3px solid #00eaff;
+    background-color: rgb(195, 224, 228);
+}
